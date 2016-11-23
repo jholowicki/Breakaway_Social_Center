@@ -17,8 +17,13 @@
    *    without disabling user zoom.
    */
 
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("http://www.freefontsdownload.net/data/502/h/helveticaneue/HelveticaNeue.ttf");
+}
+
 html {
-  font-family: sans-serif;
+  font-family: 'ScalaSans-Regular', sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -514,7 +519,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   background-image: url("../assets/images/default-pattern.png");
@@ -1783,6 +1788,10 @@ i {
   line-height: inherit;
 }
 
+i {
+  font-size: 2rem;
+}
+
 strong,
 b {
   font-weight: bold;
@@ -1800,7 +1809,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -1866,7 +1875,7 @@ h6 {
 }
 
 a {
-  color: #CF5300;
+  color: #FFF;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer;
@@ -3080,7 +3089,6 @@ select[multiple] {
   border-radius: 0;
   position: relative;
   color: #0a0a0a;
-  background-color: white;
 }
 
 .callout >:first-child {
@@ -3091,9 +3099,7 @@ select[multiple] {
   margin-bottom: 0;
 }
 
-.callout.primary {
-  background-color: #def0fc;
-}
+.callout.primary {}
 
 .callout.secondary {
   background-color: #ebebeb;
@@ -3271,7 +3277,7 @@ select[multiple] {
 
 .menu-text {
   font-weight: bold;
-  color: inherit;
+  color: white;
   line-height: 1;
   padding-top: 0;
   padding-bottom: 0;
@@ -3282,7 +3288,6 @@ select[multiple] {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 48px;
   font-weight: normal;
-  font-color: grey;
 }
 
 .menu-centered {

@@ -4,18 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>breakaway | welcome</title>
-  <script src="https://instantcm.com/js/v2/latest/txt-min.js"></script>
-  <script>
-  var options = {
-    id: "37198b79-adee-4a94-a9d3-1f4c98c6d633"
-  };
-  Txt.render(options);
-  </script>
+  <title>breakaway | Welcome</title>
   <link rel="stylesheet" type="text/css" href="css/foundation.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/additionalstyles.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
 </head>
@@ -40,50 +32,13 @@
     </div>
   </div>
   <!-- End Top Bar -->
-  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-    <ul class="orbit-container">
-      <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Back</span>&#9664;</button>
-      <button class="orbit-next" aria-label="next"><span class="show-for-sr"> Forward</span>&#9654;</button>
-      <li class="orbit-slide is-active">
-        <img src="assets/images/front-1a.jpg">
-      </li>
-      <li class="orbit-slide">
-        <img src="assets/images/oaxaca-event.jpg">
-      </li>
-      <li class="orbit-slide">
-        <img src="assets/images/interior-1.jpg">
-      </li>
-      <li class="orbit-slide">
-        <img src="assets/images/zines-3.jpg">
-      </li>
-    </ul>
-  </div>
-  <section class="wooden-container">
-    <div class="row column text-center">
-      <h2>Upcoming Events</h2>
-      <hr>
-    </div>
-    <div class="row small-up-2 large-up-4">
-      <div class="column">
-        <img class="thumbnail" src="assets/images/11.21.png">
-        <h5>Tierra Y Libertad: the Anarchism of Ricardo Flores Magon</h5>
-        <p>Monday, 11/21 7:30pm at breakaway. Sponsored by VideoClub en Resistencia.</p>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="assets/images/squat-event.png">
-        <h5>Squatting in Berlin -the Struggle for Autonomous Space</h5>
-        <p>Saturday, 11/26 7:30pm at breakaway. Sponsored by breakaway collective.</p>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="assets/images/gender-abolition-flyer.jpg">
-        <h5>Gender Abolition Reading and Friend Group</h5>
-        <p>Sunday, 11/27 8pm at breakaway. Sponsored by breakaway collective.</p>
-      </div>
-      <div class="column">
-        <img class="thumbnail" src="assets/images/digitalselfdefense-event.png">
-        <h5>Digital Self-Defense Training for Resistors & Activists</h5>
-        <p>Wednesday, 12/7 7:30pm at breakaway. Sponsored by Lucy Parson's Labs (@lucyparsonlabs).</p>
-      </div>
+  <!-- We can now combine rows and columns when there's only one column in that row -->
+  <div class="row medium-8 large-7 columns">
+    <div class="blog-post">
+      <h3>Organize!</h3>
+      <!-- <img class="thumbnail" src="assets/images/front-1a.jpg"> -->
+      <p>Contact us at breakaway_chi@riseup.net</p>
+      <p>Decisions about the space are made during our Wednesday evening collective meetings, where we discuss housekeeping, upcoming events, scheduling, and share food. The meetings are open to anyone.</p>
     </div>
     <hr>
     <div class="row">
@@ -96,12 +51,11 @@
   <footer class="footer">
     <div class="row">
       <div class="small-12 medium-6 large-5 columns">
-        <p class="logo"><a href="index.html"> breakaway</a></p>
+        <p class="logo"><i></i>breakaway</p>
         <p class="footer-links">
-          <li><a href="about.html">about</a></li>
-          <li><a href="events.html">events</a></li>
-          <li><a href="support.html">support</a></li>
-          <li><a href="organize.html">organize</a></li>
+          <a href="#">main</a>
+          <a href="#">events</a>
+          <a href="#">support</a>
         </p>
       </div>
       <div class="small-12 medium-6 large-4 columns">
