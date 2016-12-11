@@ -26,15 +26,40 @@
     <div class="top-bar-left">
       <ul class="menu">
         <li class="menu-text" id="menu-font"><a href="index.html"> breakaway</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="events.html">events</a></li>
-        <li><a href="support.html">support</a></li>
-        <li><a href="organize.html">organize</a></li>
+        <li class="dropdown shift">
+          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">site navigation</a>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="about.html">about</a>
+            <a href="events.html">events</a>
+            <a href="support.html">support</a>
+            <a href="organize.html">organize</a>
+            <a href="ourfriends.html">friends</a>
+          </div>
+        </li>
+        <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var d = 0; d < dropdowns.length; d++) {
+              var openDropdown = dropdowns[d];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
       </ul>
     </div>
     <div class="top-bar-right">
       <ul class="menu">
-        <a href="http://ill-will-editions.tumblr.com/"><i class="fi-social-tumblr"></i></a>
         <a href="https://twitter.com/Breakaway_chi/"><i class="fi-social-twitter"></i></a>
       </ul>
     </div>
@@ -65,24 +90,54 @@
     </div>
     <div class="row small-up-2 large-up-4">
       <div class="column">
-        <img class="thumbnail" src="assets/images/11.21.png">
-        <h5>Tierra Y Libertad: the Anarchism of Ricardo Flores Magon</h5>
-        <p>Monday, 11/21 7:30pm at breakaway. Sponsored by VideoClub en Resistencia.</p>
+        <!-- <img class="thumbnail" src="assets/images/11.21.png">
+ -->
+        <h5></h5>
+        <p></p>
       </div>
       <div class="column">
-        <img class="thumbnail" src="assets/images/squat-event.png">
-        <h5>Squatting in Berlin -the Struggle for Autonomous Space</h5>
-        <p>Saturday, 11/26 7:30pm at breakaway.</p>
+        <!--         <img class="thumbnail" src="assets/images/squat-event.png"> -->
+        <h5></h5>
+        <p></p>
       </div>
       <div class="column">
-        <img class="thumbnail" src="assets/images/liesjournal.jpg">
-        <h5>Gender Abolition Reading and Friend Group</h5>
-        <p>Sunday, 12/11 7pm at breakaway. Please read if you wish to attend: http://www.liesjournal.net/volume1-13-tobeliberated.pdf</p>
+        <!--         <img class="thumbnail" src="assets/images/gender-abolition-flyer.jpg"> -->
+        <h5></h5>
+        <p></p>
       </div>
       <div class="column">
-        <img class="thumbnail" src="assets/images/neo.jpg">
-        <h5>Digital Self-Defense Training for Resistors & Activists</h5>
-        <p>Wednesday, 12/7 7:30pm at breakaway. Sponsored by Lucy Parson's Labs (@lucyparsonlabs).</p>
+        <h5></h5>
+        <p></p>
+      </div>
+      <div class="column">
+        <!--         <img class="thumbnail" src="assets/images/gender-abolition-flyer.jpg"> -->
+        <h5></h5>
+        <p></p>
+      </div>
+      <div class="column">
+        <!--        <img class="thumbnail" src="assets/images/squat-event.png"> -->
+        <h5></h5>
+        <p></p>
+      </div>
+      <div class="column">
+        <!--        <img class="thumbnail" src="assets/images/squat-event.png"> -->
+        <h5></h5>
+        <p></p>
+      </div>
+      <div class="column">
+        <!--        <img class="thumbnail" src="assets/images/squat-event.png"> -->
+        <h5></h5>
+        <p></p>
+      </div>
+      <div class="column">
+        <!--        <img class="thumbnail" src="assets/images/squat-event.png"> -->
+        <h5></h5>
+        <p></p>
+      </div>
+      <div class="column">
+        <!--        <img class="thumbnail" src="assets/images/squat-event.png"> -->
+        <h5></h5>
+        <p></p>
       </div>
       <div class="row column text-center">
         <h2>Ongoing</h2>
@@ -101,9 +156,7 @@
         </div>
       </div>
       <hr>
-
   </section>
-  <hr>
   <footer class="footer">
     <div class="row">
       <div class="small-12 medium-6 large-5 columns">
@@ -120,9 +173,6 @@
           <li>
             <p><i class="fi-marker"></i> 2306 S Kedzie Chicago, IL 60623</p>
           </li>
-          <!--           <li>
-            <p><i class="fi-telephone"></i> +1-656-453-9966</p>
-          </li> -->
           <li>
             <p><i class="fi-mail"></i> breakaway_chi@riseup.net</p>
           </li>
@@ -132,11 +182,7 @@
         <p class="about">breakaway</p>
         <p class="about subheader">an autonomous social center, partisan library and cinema</p>
         <ul class="inline-list social">
-          <a href="http://ill-will-editions.tumblr.com/"><i class="fi-social-tumblr"></i></a>
           <a href="https://twitter.com/Breakaway_chi/"><i class="fi-social-twitter"></i></a>
-          <!-- <a href="#"><i class="fi-social-linkedin"></i></a>
-<a href="#"><i class="fi-social-github"></i></a>
- -->
         </ul>
       </div>
     </div>

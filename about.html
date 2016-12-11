@@ -24,16 +24,41 @@
   <div class="top-bar">
     <div class="top-bar-left">
       <ul class="menu">
-        <li class="menu-text" id="menu-font">breakaway</li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="events.html">events</a></li>
-        <li><a href="support.html">support</a></li>
-        <li><a href="organize.html">organize</a></li>
+        <li class="menu-text" id="menu-font"><a href="index.html"> breakaway</a></li>
+        <li class="dropdown shift">
+          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">site navigation</a>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="about.html">about</a>
+            <a href="events.html">events</a>
+            <a href="support.html">support</a>
+            <a href="organize.html">organize</a>
+            <a href="ourfriends.html">friends</a>
+          </div>
+        </li>
+        <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var d = 0; d < dropdowns.length; d++) {
+              var openDropdown = dropdowns[d];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
       </ul>
     </div>
     <div class="top-bar-right">
       <ul class="menu">
-        <a href="http://ill-will-editions.tumblr.com/"><i class="fi-social-tumblr"></i></a>
         <a href="https://twitter.com/Breakaway_chi/"><i class="fi-social-twitter"></i></a>
       </ul>
     </div>
@@ -47,16 +72,16 @@
       <p>Breakaway opened in October 2016 as a volunteer-run and donation-financed partisan social center and library. Our vibrant group has quickly assembled a cinema, library, kitchen, and social force. We’ve sent caravans to demonstrations, fed hundreds of people, and held several film events.</p>
       <p>Our space was founded on autonomist principles- oversimply, an environment where no one has power over anyone else. Decisions about the space are made during our Wednesday evening collective meetings, where we discuss housekeeping, upcoming events, scheduling, and share food. The meetings are open to anyone.</p>
     </div>
-    </section>
     <hr>
     <footer class="footer">
       <div class="row">
         <div class="small-12 medium-6 large-5 columns">
           <p class="logo"><i></i>breakaway</p>
           <p class="footer-links">
-            <a href="#">main</a>
-            <a href="#">events</a>
-            <a href="#">support</a>
+            <li><a href="about.html">about</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="support.html">support</a></li>
+            <li><a href="organize.html">organize</a></li>
           </p>
         </div>
         <div class="small-12 medium-6 large-4 columns">
@@ -76,7 +101,6 @@
           <p class="about">breakaway</p>
           <p class="about subheader">an autonomous social center, partisan library and cinema</p>
           <ul class="inline-list social">
-            <a href="http://ill-will-editions.tumblr.com/"><i class="fi-social-tumblr"></i></a>
             <a href="https://twitter.com/Breakaway_chi/"><i class="fi-social-twitter"></i></a>
             <!-- <a href="#"><i class="fi-social-linkedin"></i></a>
 <a href="#"><i class="fi-social-github"></i></a>

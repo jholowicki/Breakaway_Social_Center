@@ -25,29 +25,50 @@
     <div class="top-bar-left">
       <ul class="menu">
         <li class="menu-text" id="menu-font"><a href="index.html"> breakaway</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="events.html">events</a></li>
-        <li><a href="support.html">support</a></li>
-        <li><a href="organize.html">organize</a></li>
+        <li class="dropdown shift">
+          <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">site navigation</a>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="about.html">about</a>
+            <a href="events.html">events</a>
+            <a href="support.html">support</a>
+            <a href="organize.html">organize</a>
+            <a href="ourfriends.html">friends</a>
+          </div>
+        </li>
+        <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var d = 0; d < dropdowns.length; d++) {
+              var openDropdown = dropdowns[d];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
       </ul>
     </div>
     <div class="top-bar-right">
       <ul class="menu">
-        <a href="http://ill-will-editions.tumblr.com/"><i class="fi-social-tumblr"></i></a>
         <a href="https://twitter.com/Breakaway_chi/"><i class="fi-social-twitter"></i></a>
       </ul>
     </div>
   </div>
   <!-- End Top Bar -->
-  <!-- We can now combine rows and columns when there's only one column in that row -->
   <div class="row medium-8 large-7 columns">
     <div class="blog-post">
       <h3>Support Us</h3>
       <img class="thumbnail" src="assets/images/books.jpg">
-      <p>Your tax-deductible support for breakaway goes to initiatives like:
-        <br><strong>Establishing a Social Center, Partisan Library & Cinema</strong>
-        <br><strong>Incubating Resilient Networks</strong>
-        <br><strong>Infrastructure Facilitating Autonomy in the Chicago Area</strong></p>
+      <p>Your <strong>tax-deductible</strong> support for breakaway goes towards keeping the space open and maintained in order to further the building of resilient networks of autonomy in the Chicago area.</p>
       <hr>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -115,7 +136,6 @@
             <p class="about">breakaway</p>
             <p class="about subheader">an autonomous social center, partisan library and cinema</p>
             <ul class="inline-list social">
-              <a href="http://ill-will-editions.tumblr.com/"><i class="fi-social-tumblr"></i></a>
               <a href="https://twitter.com/Breakaway_chi/"><i class="fi-social-twitter"></i></a>
               <!-- <a href="#"><i class="fi-social-linkedin"></i></a>
 <a href="#"><i class="fi-social-github"></i></a>
