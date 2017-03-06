@@ -4,12 +4,12 @@ Breakaway is a social center on Chicago's southwest side. I made this website in
 
 ##Technologies Used
 
--Foundation CSS & JS Framework
--Jekyll -static site generator
--HTML5
+- Foundation CSS & JS Framework
+- Jekyll -static site generator
+- HTML5
 
 ##Lessons Learned
 
--Clients prefer familiar platforms
--Carousel functions can slow pages
--First use of static site generation
+- Clients prefer familiar platforms
+- Carousel functions can slow pages
+- First use of static site generation
